@@ -1,29 +1,25 @@
 
-//Async transforme la fonction en une promesse
-let func  = async () => {
-    console.log("ok");
-    let text 
-    try {
+ //nouveau scope for await
+(async () => {
 
-          text = await funcTwo();
-    } catch (err) {
-          text = err.message;
+    let funcTwo =   () => { 
+
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                 
+                resolve('test');
+                //reject(new Error('super error'));
+            }, 500);
+        });
     }
+    
+    let text = await funcTwo(); 
+    console.log(text);
+    
+})()
+
  
-    return text
-}
-
-let funcTwo =   () => { 
-
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-             
-            //resolve('test');
-            reject(new Error('super error'));
-        }, 500);
-    });
-}
-
-func().then(text => console.log(text));
-
 // console.log(func());
+
+
+
