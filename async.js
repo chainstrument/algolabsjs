@@ -1,6 +1,9 @@
 
 let func  = async () => {
     console.log("ok");
+    return 'test'
 }
 
-console.log(func());
+func().then(text => console.log(text));
+
+// console.log(func());
