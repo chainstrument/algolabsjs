@@ -15,4 +15,27 @@ function isPrime(n) {
     return true;
 }
 
-console.log(isPrime(23));
+//console.log(isPrime(23));
+
+
+//Factorielle 
+
+function factorial(n) {
+    if (n === 0) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+
+function factorial2 (n) {
+   r = 1;
+    while (n> 0){
+        r += r * (n - 1);
+        n--;
+ 
+    }
+    return r;
+}
+
+console.log(v(25));
