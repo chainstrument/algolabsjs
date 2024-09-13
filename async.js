@@ -19,7 +19,7 @@ let funcTwo =   () => {
         setTimeout(() => {
              
             //resolve('test');
-            reject(new Error('error'));
+            reject(new Error('super error'));
         }, 500);
     });
 }
