@@ -9,9 +9,10 @@ fruits.map((fruit) => {
 let result = ['20', '30', '40', '50', '60', '70'];
 
 // manipulate map function
-res = result.map((result) => {
-     return result * 2
-});
 
+res = result.map(el => {
+    //console.log(el, key, arr);
+     return el * el
+});
 
 console.log(res);
