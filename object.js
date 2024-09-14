@@ -11,6 +11,22 @@ let user2 = {
     chien: true
 }
 
-console.log(user);
+//console.log(user);
 
-console.log(user2);
+//console.log(user2);
+
+
+const panier1 = {
+    items: ['orange', 'apple', 'banana'],
+    prixTotal: 20   
+}
+
+const panier2 = { items: ['kiwi', 'mango'], prixTotal: 25}
+
+const panier3 = {
+    ...panier1,
+    ...panier2
+}
+
+//Les clés seront ecrasés lors du merge
+console.log(panier3);
