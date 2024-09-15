@@ -30,3 +30,21 @@ const panier3 = {
 
 //Les clés seront ecrasés lors du merge
 console.log(panier3);
+
+
+
+//for in
+
+const chatsRefuge = {
+    siamois: 4,
+    persan: 5,
+    sphynx: 6,
+    radgol: 7,
+}
+
+
+
+for (chat in chatsRefuge)
+{
+    console.log(chat, chatsRefuge[chat]);
+}
