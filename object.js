@@ -48,3 +48,19 @@ for (chat in chatsRefuge)
 {
     console.log(chat, chatsRefuge[chat]);
 }
+
+//enlever la propriété a un objet
+
+const voiture = {
+    marque: 'Toyota',
+    modele: 'Camry',
+    couleur: 'blanc',
+    annee: 2020
+}
+
+const voitureSansCouleur = ({couleur, ...voitureSansCouleur}) => {
+    console.log(couleur)
+    return voitureSansCouleur;
+}
+
+//console.log(voitureSansCouleur(voiture));
