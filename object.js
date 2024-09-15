@@ -71,6 +71,20 @@ const pays = {
     population: 640000
 }
 
-const { nom } = pays;
+const { nom : sonNom} = pays;
 
-console.log(nom);
+//console.log(nom);
+
+//Additionner les valeurs d'un objet 
+
+const depenses = {
+    chauffage: 1000,
+    frais: 200,
+    internet: 30,
+    tv: 50
+}
+
+//reduce: prend un 3 eme parameters pour initer la valeur de départ de l'accumulation
+const total = Object.values(depenses).reduce((acc, val) => acc + val, 0);
+
+console.log(total)
