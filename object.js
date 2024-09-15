@@ -29,7 +29,7 @@ const panier3 = {
 }
 
 //Les clés seront ecrasés lors du merge
-console.log(panier3);
+// console.log(panier3);
 
 
 
@@ -46,7 +46,7 @@ const chatsRefuge = {
 
 for (chat in chatsRefuge)
 {
-    console.log(chat, chatsRefuge[chat]);
+   // console.log(chat, chatsRefuge[chat]);
 }
 
 //enlever la propriété a un objet
@@ -64,3 +64,13 @@ const voitureSansCouleur = ({couleur, ...voitureSansCouleur}) => {
 }
 
 //console.log(voitureSansCouleur(voiture));
+
+const pays = {
+    nom: 'France',
+    capitale: 'Paris',
+    population: 640000
+}
+
+const { nom } = pays;
+
+console.log(nom);
